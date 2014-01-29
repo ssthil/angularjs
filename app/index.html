@@ -1,14 +1,47 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
-<meta charset="utf-8">
-  <title>Angularjs</title>
-  <link rel="stylesheet" href="css/main.css"/>
+	<meta charset="utf-8">
+	<title>Angularjs Examples</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-  <h1>My first Github Repository</h1>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers.js"></script>
+<div class="container">
+	<div ng-controller="MainCtrl">
+	  <h1>Playing with Github Repository - AngularJS</h1>
+	  <div class="bs-example">
+	  <div class="panel panel-default">
+	  	<div class="panel-heading">Car types and Models</div>
+	 <div class="table-responsive">
+	  <table class="table table-striped">
+	  	<thead>
+	  		<tr>
+	  			<th>Brand</th>
+	  			<th>Model</th>
+	  			<th>Release</th>
+	  		</tr>
+	  	</thead>
+	  	<tbody>
+	  		<tr ng-repeat="cars in vehicle">
+	  			<td>{{cars.brand}}</td>
+	  			<td>{{cars.model}}</td>
+	  			<td>{{cars.release}}</td>
+	  		</tr>
+	  	</tbody>
+	  </table>
+	  </div>
+	   </div>
+	  </div>
+	</div>
+</div>
+ 	<script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+ 
 </body>
 </html>
